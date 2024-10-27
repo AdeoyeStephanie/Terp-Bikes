@@ -1,0 +1,103 @@
+.main-body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/Bike\ App.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+}
+.main-text{
+    display: flex;
+    color:  black;
+    text-align: center;
+    font-size: 3.5em;
+    text-transform: capitalize;
+    justify-content: center;
+    /* background-color: rgb(244, 242, 234); */
+    width:300px;
+    position: absolute;
+    bottom: 12%;
+    left: 21%;
+    font-family: fantasy;
+    font-weight: 700;
+    text-shadow: 3px 2px gold;
+    animation-name: zoomInRight;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+ @keyframes zoomInRight {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateX(0);
+    }
+}
+.sub-text-container{
+    display: flex;
+    background-color: rgb(237, 68, 68);
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    left: 60%;
+    bottom: 35%;
+    top: 15%;
+    position: absolute;
+    border-radius: 30px;
+    padding: 10px;
+}
+.sub-text{
+    display: flex;
+    color: black;
+    position: absolute;
+    font-size: 1.9em;
+    /*background-color: aqua; */
+    top: 10%;
+    font-family: fantasy;
+}
+.text-box {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gold;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    top: 30%;
+    position: absolute;
+    border-radius: 4px;
+  }
+.destination-set-btn{
+    display: flex;
+    background-color: black;
+    color: gold;
+    width: 70px;
+    height:40px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    text-shadow: 0.5px 0.5px red;
+    font-family: fantasy;
+}
+
+.destination-set-btn:hover{
+    display: flex;
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    width: 70px;  /*width increases as the button is hovered on*/
+    height:40px;
+    border-radius: 10px;  
+    font-size: 1.7em;
+    transition: 1.3s;
+    text-align: center;
+    border: none;
+}
